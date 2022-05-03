@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class calculator {
     public static void main(String[] args){
-        System.out.print("Bem-vindo a sua nova calculadora!");
+        System.out.print("Bem-vindo a sua nova calculadora! Escolha sua operação (1/2/3/4) ");
         Scanner sc = new Scanner(System.in);
 
         int input = sc.nextInt();
@@ -16,6 +16,8 @@ public class calculator {
             subtrai(a, b);
         } else if (input == 3) {
             multiplica(a, b);
+        } else if (input == 4) {
+            divide(a, b);
         }
 
 
@@ -34,6 +36,11 @@ public class calculator {
 
     public static void multiplica(int x, int y) {
         int z = x * y;
+        System.out.println(z);
+    }
+
+    public static void divide(int x, int y) {
+        int z = x / y;
         System.out.println(z);
     }
 }
