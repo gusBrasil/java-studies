@@ -25,7 +25,7 @@ public class calculator {
     }
 
     public static void soma(int x, int y) {
-        int z = x +y;
+        int z = x + y;
         System.out.println(z);
     }
 
